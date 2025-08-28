@@ -1,0 +1,27 @@
+# 🚀 Git Course for Freshers & Interview Preparation
+
+Welcome! 🎉  
+This repository contains **Git basics for beginners** and **important Git interview questions with answers** for freshers preparing for placements.
+
+---
+
+## 📘 Git Basics (For Freshers)
+
+### 1. What is Git and why do we use it?
+- Git is a **distributed version control system** used to track changes in source code.  
+- It helps teams collaborate, manage versions, and roll back changes if needed.
+
+### 2. Difference between Git and GitHub
+- **Git** → Version control tool (installed on your system).  
+- **GitHub** → Cloud platform that hosts Git repositories for collaboration.
+
+### 3. Git installation and setup
+```bash
+# Install Git
+sudo apt-get install git       # Linux
+brew install git               # macOS
+winget install --id Git.Git    # Windows
+
+# Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
