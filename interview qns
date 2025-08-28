@@ -25,3 +25,120 @@ winget install --id Git.Git    # Windows
 # Configure Git
 git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
+
+4. Basic Git commands
+
+git init → Initialize a new repository.
+
+git clone <url> → Copy a remote repo.
+
+git add <file> → Stage file(s).
+
+git commit -m "message" → Save staged changes.
+
+git push → Upload changes to remote repo.
+
+git pull → Download changes from remote.
+
+git status → Show repo status.
+
+git log → Show commit history.
+
+5. Branching and Merging
+
+Create branch → git branch feature1
+
+Switch branch → git checkout feature1
+
+Merge → git merge feature1
+
+6. Resolving Merge Conflicts
+
+Open the conflicted file → fix manually.
+
+Stage the file (git add <file>).
+
+Commit (git commit).
+
+7. Working with Remote Repositories
+
+Add remote: git remote add origin <url>
+
+Push code: git push -u origin main
+
+🎯 Interview Questions (with Answers)
+1. What is the difference between Git and SVN?
+
+Git is distributed (every developer has a full copy).
+
+SVN is centralized (requires central server).
+
+Git is faster and better for branching.
+
+2. What is a commit ID in Git?
+
+Each commit has a unique SHA-1 hash (commit ID).
+
+It identifies a specific snapshot of the code.
+
+3. How do you undo the last commit?
+
+Keep changes:
+
+git reset --soft HEAD~1
+
+
+Remove changes:
+
+git reset --hard HEAD~1
+
+4. What is the difference between git fetch and git pull?
+
+git fetch → Downloads changes but doesn’t merge.
+
+git pull → Downloads and merges changes.
+
+5. How to resolve merge conflicts?
+
+Open conflicted files → manually edit.
+
+Stage files (git add <file>).
+
+Commit (git commit).
+
+6. What is the difference between git reset, git revert, and git checkout?
+
+git reset → Moves HEAD to previous commit (can delete history).
+
+git revert → Creates a new commit that undoes changes.
+
+git checkout → Switches branches or restores files.
+
+7. How do you create and switch to a new branch?
+git checkout -b new-branch
+
+8. What is .gitignore file?
+
+A file that tells Git to ignore certain files (logs, build artifacts, secrets, etc.).
+
+9. What is the difference between fork, clone, and branch?
+
+Fork → Copy someone else’s repo into your GitHub account.
+
+Clone → Copy a repo from GitHub to your local system.
+
+Branch → Create a separate line of development inside a repo.
+
+10. How to squash commits in Git?
+git rebase -i HEAD~n
+
+
+Mark commits as squash → combine into one commit.
+
+📂 Resources
+
+Official Git Documentation
+
+GitHub Guides
+
+InterviewBit Git Questions
